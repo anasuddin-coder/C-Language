@@ -1,0 +1,1 @@
+This project simulates a basic ATM (Automated Teller Machine) system. It allows users to perform essential banking operations such as checking balance, depositing money, withdrawing money, and printing receipts. The system also includes a secure PIN based login system to prevent unauthorized access. 
