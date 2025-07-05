@@ -4,8 +4,8 @@
 
 #define PIN "1234"
 
-// Receipt printing function
-void printReceipt(const char *type, float amount, float balance)
+// Here receipt printing function i made it
+void print-Receipt(const char *type, float amount, float balance)
 {
     printf("\n----------- RECEIPT -----------\n");
     printf("Transaction Type: %s\n", type);
@@ -22,7 +22,7 @@ int main()
     char entered_pin[10];
     int attempts = 0;
 
-    // PIN LOGIN SYSTEM
+    // PIN Login Systen in ATM
     while (1)
     {
         printf("\nEnter your 4-digit PIN: ");
@@ -46,10 +46,10 @@ int main()
         }
     }
 
-    // ATM Menu
+    // ATM Menu System it will show again and again if user press 4 exit option then the program will end and the recipt will show to user
     while (1)
     {
-        printf("\n--- ATM Menu ---\n");
+        printf("\n--- ATM Menu System ---\n");
         printf("1. Check Balance\n");
         printf("2. Deposit Money\n");
         printf("3. Withdraw Money\n");
@@ -71,7 +71,7 @@ int main()
             {
                 balance += deposit;
                 printf("Deposit successful. New balance: $%.2f\n", balance);
-                printReceipt("Deposit", deposit, balance);
+                print-Receipt("Deposit", deposit, balance);
             }
             else
             {
@@ -86,7 +86,7 @@ int main()
             {
                 balance -= withdraw;
                 printf("Withdrawal successful. New balance: $%.2f\n", balance);
-                printReceipt("Withdrawal", withdraw, balance);
+                print-Receipt("Withdrawal", withdraw, balance);
             }
             else
             {
